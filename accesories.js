@@ -157,6 +157,20 @@ btns.forEach(function(btn){
 
 var repeater;
 var navtop = document.querySelector('#navbarid')
+var logoBorder = document.querySelector('#navbarid span#shelfL')
+
+var navWhite = function(){
+	navtop.classList.remove('navbar-light')
+	navtop.classList.add('navbar-dark')
+	logoBorder.classList.add('logoBordWhite')
+}
+
+var navBlack = function(){
+	navtop.classList.remove('navbar-dark')
+	navtop.classList.add('navbar-light')
+	logoBorder.classList.remove('logoBordWhite')
+}
+
 function doWork() {
 	$('#more').load('exp1.php');
 	repeater = setTimeout(doWork, 100);
@@ -164,7 +178,10 @@ function doWork() {
 	if (fullpage_api.getActiveSection()['anchor'] != "page1"){
 		navtop.classList.add('transparent')
 	} else {navtop.classList.remove('transparent')}
-
+	
+	if (fullpage_api.getActiveSection()['anchor'] === "page4"){
+		navWhite()
+	} else {navBlack()}
 
 
 }

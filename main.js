@@ -169,16 +169,33 @@ btns.forEach(function(btn){
 // 
 // 
 
-$('#getActiveSlide').click(function(){
-	console.log(fullpage_api.getActiveSlide());
- });
+// $('#getActiveSlide').click(function(){
+// 	console.log(fullpage_api.getActiveSlide());
+//  });
  
- $('#getActiveSection').click(function(){
-	console.log(fullpage_api.getActiveSection());
- });
+//  $('#getActiveSection').click(function(){
+// 	console.log(fullpage_api.getActiveSection());
+//  });
+
+
+
 
 var repeater;
 var navtop = document.querySelector('#navbarid')
+var logoBorder = document.querySelector('#navbarid span#shelfL')
+
+var navWhite = function(){
+	navtop.classList.remove('navbar-light')
+	navtop.classList.add('navbar-dark')
+	logoBorder.classList.add('logoBordWhite')
+}
+
+var navBlack = function(){
+	navtop.classList.remove('navbar-dark')
+	navtop.classList.add('navbar-light')
+	logoBorder.classList.remove('logoBordWhite')
+}
+
 function doWork() {
 	$('#more').load('exp1.php');
 	repeater = setTimeout(doWork, 100);
@@ -186,7 +203,10 @@ function doWork() {
 	if (fullpage_api.getActiveSection()['anchor'] != "page1"){
 		navtop.classList.add('transparent')
 	} else {navtop.classList.remove('transparent')}
-
+	
+	if (fullpage_api.getActiveSection()['anchor'] === "page8"){
+		navWhite()
+	} else {navBlack()}
 
 
 }

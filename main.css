@@ -475,3 +475,7 @@ div#colorbtn_3 {
     background-color: transparent !important;
     box-shadow: unset;
 }
+
+.logoBordWhite {border-color: white !important;}
+
+.logoBordBlack {border-color: black;}
