@@ -56,7 +56,7 @@ var myFullpage = new fullpage('#fullpage', {
 	responsiveSlides: false,
 	parallax: true,
 	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-	// parallaxKey: "199E574F-30614DCB-B121998C-5AE314A1",
+	parallaxKey: "c2hlbGZseW5lLmNvbS5hdV8zMXJjR0Z5WVd4c1lYZz1BcHA",
 	//Custom selectors
 	sectionSelector: '.section',
 	slideSelector: '.slide',
