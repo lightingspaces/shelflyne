@@ -1,0 +1,475 @@
+html {
+    font-size: 0.6rem;
+  }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    html {
+        font-size: 0.8rem;
+      }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    html {
+        font-size: 1rem;
+      }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    html {
+        font-size: 1.2rem;
+      }
+ }
+
+ @media (max-width: 576px) { 
+    iframe#vime {
+        height: auto !important;
+      }
+ }
+
+ iframe#vime {
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+
+/*  */
+.navbar.navbar-4 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
+}
+
+/*  */
+
+.mb-4, .my-4 {
+    margin-bottom: 0!important;
+}
+ 
+.navbar-light .navbar-toggler {
+    border: none; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #202020;
+}
+
+.fp-tableCell {
+    text-align: center;
+}
+
+span#shelfL {
+    border-color: black;
+    border-style: solid;
+    border-width: 3px 0px 3px 0px;
+    font-weight: bold;
+}
+
+#page_2 #sect2::before, #page_3 #sect3::before, #page_4 #sect4::before, #page_7 #sect7::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+
+}
+#page_2 #sect2, #page_3 #sect3, #page_4 #sect4, #sect7{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#page_2 #sect2content, #page_3 #sect3content, #page_4 #sect4content{
+    position: relative;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+}
+
+/*  */
+#page_2 #sect2::before {
+background-image: url('content/images/section_2-1_background_1080p.jpg');
+}
+#page_3 #sect3::before {
+    background-image: url('content/images/section_3_background_1080p.jpg');
+}
+#page_4 #sect4::before {
+    background-image: url('content/images/section_4_background_1080p.jpg');
+}
+#page_7 #sect7::before {
+    background-image: url('content/images/section_7_background_1080p.jpg');
+}
+
+/*  */
+
+
+span.navbar-toggler-icon:hover {
+    width: 1.6em;
+    height: 1.6em;
+}
+
+#page_1 p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.9em;
+}
+
+#page_2 p, #page_3 p, #page_4 p, #page_5 p {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.7em;
+}
+
+
+div#fp-nav:hover {
+    opacity: 0.75;
+}
+div#fp-nav {
+    opacity: 0.5;
+}
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 0.5;
+}
+
+#textm {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+nav.fixed-top.navbar.navbar-light.navbar-1.white {
+    background-color: white;
+} 
+
+#adiff, #page_7 #text {
+    position: absolute;
+    margin-top: 0;
+    top: 10%;
+    left: 5%;
+    width: 40%;
+    text-align: left;
+}
+
+
+#page_2 h1, #page_3 h1, #page_4 h1 {
+    font-size: 4.7rem;
+}
+#page_2 h3, #page_3 h3, #page_4 h3 {
+    font-size: 3.1rem;
+}
+
+/*  */
+/*  */
+/*  */
+
+div#s2btn_1 {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+div#s2btn_2 {
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+div#s2_clear {
+    clear: both;
+}
+
+#s2btn_1 {
+    background-color: white;
+}
+
+sect2switch {
+    background-color: white;
+}
+
+/*  */
+/*  */
+/*  */
+
+div#sect2_btns .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  div#sect2_btns .switch input {display:none;}
+  
+  div#sect2_btns .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  div#sect2_btns .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  div#sect2_btns input:checked + .slider {
+    /* background-color: #2196F3; */
+  }
+  
+  div#sect2_btns input:focus + .slider {
+    /* box-shadow: 0 0 1px #2196F3; */
+  }
+  
+  div#sect2_btns input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+.slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*  */
+  /*  */
+  /*  */
+
+#page_2 #sect2.sect2_2_active::before {
+    background-image: url('content/images/section_2-2_background_1080p.jpg');
+}
+
+#textm p {opacity: 0.8;}
+
+/*  */
+
+#insembed {
+    position: relative;
+    left: 8%;
+}
+
+#page_9 {
+    background-color: #EFF2F2;
+}
+#posters {
+    position: relative;
+    height: 100%;
+    width:40%;
+    left: 5%;
+    /* background-color: red; */
+    /* background-image: url('content/images/section_7-1_poster_600x1080.jpg') */
+
+}
+
+#posterright {
+    position: absolute;
+    margin-top: 0;
+    top: 10%;
+    right: 5%;
+    width: 40%;
+    text-align: right;
+    
+
+}
+#posterright #text{
+
+}
+
+#posterright ul {
+    text-align: left;
+    margin-top: 10%;
+}
+
+#page_10 {
+    background-color: #323232;
+    color: white;
+}
+
+/*  */
+/*  */
+/*  */
+
+div#accbtns {
+    height: 35px;
+    text-align: left;
+    margin-top: 10%;
+}
+
+div#accbtns div#btn_1, div#accbtns div#btn_2, div#accbtns div#btn_3 {
+    height: 100%;
+    width: 30px;
+    margin-right: 10px;
+    background-color: #323232;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+
+#accbtns div{
+    transition: transform .2s;
+}
+
+#accbtns div:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+#poster_1 {
+    background-image: url(content/images/section_7-1_poster_600x1080.jpg);
+}
+#poster_2 {
+    background-image: url(content/images/section_7-2_poster_600x1080.jpg);
+
+}
+#poster_3 {
+    background-image: url(content/images/section_7-3_poster_600x1080.jpg);
+
+}
+
+.poster {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.opacityCero {
+    opacity: 0;
+}
+
+.fadeIn {
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+     opacity: 1;
+     
+}
+
+.lists {
+    position: absolute;
+}
+
+/* Background switching section 8 */
+
+div#colorbtns {
+    height: 35px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+}
+
+div#colorbtns div#colorbtn_1, div#colorbtns div#colorbtn_2, div#colorbtns div#colorbtn_3 {
+    height: 100%;
+    width: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+div#colorbtn_1 {
+    background-color: white;
+}
+div#colorbtn_2 {
+    background-color: black;
+}
+div#colorbtn_3 {
+    background-color: red;
+}
+
+.colorbuttons{
+    /* border: solid 1px black; */
+    transition: transform .2s;
+}
+
+.colorbuttons:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+
+#background_1, #background_2, #background_3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#backgrounds div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background_1{
+    background-image: url(content/images/shelve_white_1080p.jpg);
+}
+
+#background_2{
+    background-image: url(content/images/shelve_black_1080p.jpg);
+}
+
+#background_3{
+    background-image: url(content/images/shelve_red_1080p.jpg);
+}
+
+/* Pushing */
+
+/* Pushing 2 */
+
+
+
+.md-form label {
+    color: white;
+}
+.text-md-left {
+    text-align: center!important;
+}
