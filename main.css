@@ -339,18 +339,17 @@ div#sect2_btns .switch {
 /*  */
 
 div#accbtns {
-    height: 35px;
+    height: 80px;
     text-align: left;
     margin-top: 10%;
 }
 
 div#accbtns div#btn_1, div#accbtns div#btn_2, div#accbtns div#btn_3 {
     height: 100%;
-    width: 30px;
+    width: 80px;
     margin-right: 10px;
     background-color: #323232;
     display: inline-block;
-    border-radius: 100%;
 }
 
 
@@ -401,7 +400,7 @@ div#accbtns div#btn_1, div#accbtns div#btn_2, div#accbtns div#btn_3 {
 /* Background switching section 8 */
 
 div#colorbtns {
-    height: 35px;
+    height: 80px;
     position: absolute;
     left: 0;
     right: 0;
@@ -410,10 +409,9 @@ div#colorbtns {
 
 div#colorbtns div#colorbtn_1, div#colorbtns div#colorbtn_2, div#colorbtns div#colorbtn_3 {
     height: 100%;
-    width: 30px;
+    width: 80px;
     margin-right: 10px;
     display: inline-block;
-    border-radius: 100%;
 }
 div#colorbtn_1 {
     background-color: white;
