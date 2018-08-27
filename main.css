@@ -107,7 +107,7 @@ span#shelfL {
 
 /*  */
 #page_2 #sect2::before {
-background-image: url('content/images/section_2-1_background_1080p.jpg');
+    background-image: url('content/images/section_2-1_background_1080p.jpg');
 }
 #page_3 #sect3::before {
     background-image: url('content/images/section_3_background_1080p.jpg');
@@ -479,3 +479,24 @@ div#colorbtn_3 {
 .logoBordWhite {border-color: white !important;}
 
 .logoBordBlack {border-color: black;}
+
+/*  */
+/*  */
+/*  */
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 8px;
+    width: 15px;
+    border-radius: 0%;
+}
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border-radius: 0;
+    height: 3px;
+    width: 8px;
+}
+
+form#contact-form input, form#contact-form textarea {
+    color: white;
+}

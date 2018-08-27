@@ -66,7 +66,7 @@
         <!-- Section 1 -->
         <div class="section" data-anchor="page1" id="page_1">
           
-            <video data-keepplaying autoplay muted loop id="myVideo">
+            <video data-keepplaying autoplay muted loop id="myVideo" >
                     <source data-src="content/videos/section_1video.webm" type="video/webm" />
             </video>
             
@@ -83,7 +83,7 @@
         </div>
         <!-- Section 2 -->
         <div class="section" data-anchor="page2" id="page_2">
-            <div id='sect2'></div>
+            <div id='sect2' class="fp-bg"></div>
             <div id='sect2content'>
                 <h1>High Colour</h1>
                 <h3>Rendering Index</h3>
@@ -102,7 +102,7 @@
         </div>
         <!-- Section 3 -->
         <div class="section" data-anchor="page3" id="page_3">
-            <div id='sect3'></div>
+            <div id='sect3' class="fp-bg"></div>
             <div id='sect3content'>
             <h1>Modular</h1>
             <h3>Shelving Design</h3>
@@ -113,7 +113,7 @@
         </div>
         <!-- Section 4 -->
         <div class="section" data-anchor="page4" id="page_4">
-            <div id='sect4'></div>
+            <div id='sect4' class="fp-bg"></div>
             <div id='sect4content'>
             <h3>Simple, Hassle Free</h3>
             <h1>Installation</h1>
@@ -191,9 +191,11 @@
         <div class="section" data-anchor="page10" id="page_10">
             <div class="row">
                 <div class="col-sm-4 col-md-4 py-4">
+                    <div id="footerleft">
                     <span><p>LS</p></span> 
                     <span><p>LIGHTING SPACES</p></span> 
-                    <span><p>SHELFLYNE</p></span>                     
+                    <span><p>SHELFLYNE</p></span>   
+                    </div>                  
                 </div>
                 <!--Contact form-->
                 <div class="col-sm-4 col-md-4 py-4">
@@ -288,7 +290,11 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     
     <script type="text/javascript" src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="fullPage.js-master/src/fullpage.js"></script>
+    <!-- <script type="text/javascript" src="fullPage.js-master/src/fullpage.js"></script> -->
+    <script type="text/javascript" src="fullPage.js-master/src/fullpage.parallax.min.js"></script>
+    <script type="text/javascript" src="fullPage.js-master/dist/fullpage.extensions.min.js"></script>
+    
+    
     <script src="main.js"></script>
 </body>
 
