@@ -152,4 +152,21 @@ btns.forEach(function(btn){
 	
 })
 // 
+// 
+// 
 
+var repeater;
+var navtop = document.querySelector('#navbarid')
+function doWork() {
+	$('#more').load('exp1.php');
+	repeater = setTimeout(doWork, 100);
+	// console.log(fullpage_api.getActiveSection()['anchor']);
+	if (fullpage_api.getActiveSection()['anchor'] != "page1"){
+		navtop.classList.add('transparent')
+	} else {navtop.classList.remove('transparent')}
+
+
+
+}
+
+doWork();

@@ -470,3 +470,8 @@ div#colorbtn_3 {
 .md-form label {
     color: white;
 }
+
+.transparent {
+    background-color: transparent !important;
+    box-shadow: unset;
+}
