@@ -25,8 +25,11 @@ var myFullpage = new fullpage('#fullpage', {
 	loopHorizontal: true,
 	continuousVertical: false,
 	continuousHorizontal: false,
-	scrollHorizontally: false,
+	scrollHorizontally: true,
 	interlockedSlides: false,
+	
+	scrollHorizontallyKey: "c2hlbGZseW5lLmNvbS5hdV90VU9jMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDVVUVU=",
+
 	dragAndMove: false,
 	offsetSections: false,
 	resetSliders: false,

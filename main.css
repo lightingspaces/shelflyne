@@ -116,7 +116,7 @@ span#shelfL {
     background-image: url('content/images/section_4_background_1080p.jpg');
 }
 #page_7 #sect7::before {
-    background-image: url('content/images/section_7_background_1080p.jpg');
+    background-image: url('content/images/section_7_background_1080p.png');
 }
 
 /*  */
@@ -461,6 +461,14 @@ div#colorbtn_3 {
     background-image: url(content/images/shelve_red_1080p.jpg);
 }
 
+#poster_sign{
+    background-image: url(content/images/Illuminated_sign_poster.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
 /* Pushing */
 
 /* Pushing 2 */
@@ -499,4 +507,9 @@ div#colorbtn_3 {
 
 form#contact-form input, form#contact-form textarea {
     color: white;
+}
+
+div#page_2,div#page_3,div#page_4,div#page_5,div#page_6,div#page_7,div#page_8,div#page_9,div#page_10 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
