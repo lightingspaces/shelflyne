@@ -170,6 +170,9 @@ var navWhite = function(){
 	navtop2.classList.remove('navbar-light')
 	navtop2.classList.add('navbar-dark')
 	logoBorder.classList.add('logoBordWhite')
+	document.querySelectorAll('#fp-nav ul li a span, .fp-slidesNav ul li a span').forEach(function(item){
+		item.setAttribute('style','background-color: white;')
+})
 }
 
 var navBlack = function(){
@@ -180,6 +183,9 @@ var navBlack = function(){
 	navtop2.classList.remove('navbar-dark')
 	navtop2.classList.add('navbar-light')
 	logoBorder.classList.remove('logoBordWhite')
+	document.querySelectorAll('#fp-nav ul li a span, .fp-slidesNav ul li a span').forEach(function(item){
+		item.setAttribute('style','background-color: #333;')
+})
 }
 
 function doWork() {
