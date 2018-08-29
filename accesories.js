@@ -156,19 +156,29 @@ btns.forEach(function(btn){
 // 
 // 
 
+
 var repeater;
-var navtop = document.querySelector('#navbarid')
+var navtop2 = document.querySelector('#navbarid')
+var navtopicon = document.querySelectorAll('.animated-icon4 span')
 var logoBorder = document.querySelector('#navbarid span#shelfL')
 
 var navWhite = function(){
-	navtop.classList.remove('navbar-light')
-	navtop.classList.add('navbar-dark')
+	navtopicon.forEach(function(item){
+		item.classList.remove('blackcolor')
+		item.classList.add('whitecolor')
+	})
+	navtop2.classList.remove('navbar-light')
+	navtop2.classList.add('navbar-dark')
 	logoBorder.classList.add('logoBordWhite')
 }
 
 var navBlack = function(){
-	navtop.classList.remove('navbar-dark')
-	navtop.classList.add('navbar-light')
+	navtopicon.forEach(function(item){
+		item.classList.remove('whitecolor')
+		item.classList.add('blackcolor')
+	})
+	navtop2.classList.remove('navbar-dark')
+	navtop2.classList.add('navbar-light')
 	logoBorder.classList.remove('logoBordWhite')
 }
 
@@ -177,8 +187,11 @@ function doWork() {
 	repeater = setTimeout(doWork, 100);
 	// console.log(fullpage_api.getActiveSection()['anchor']);
 	if (fullpage_api.getActiveSection()['anchor'] != "page1"){
-		navtop.classList.add('transparent')
-	} else {navtop.classList.remove('transparent')}
+		navtop2.classList.add('transparent')
+	} else {navtop2.classList.remove('transparent')
+	}
+
+
 	
 	if (fullpage_api.getActiveSection()['anchor'] === "page4"){
 		navWhite()
@@ -188,3 +201,26 @@ function doWork() {
 }
 
 doWork();
+
+
+// Navbar 
+
+
+// Works everywhere
+$(document).ready(function () {
+
+	// Hide/show animation hamburger function
+	$('.navbar-toggler').on('click', function () {
+  
+	  // Take this line to first hamburger animations
+	  $('.animated-icon1').toggleClass('open');
+  
+	  // Take this line to second hamburger animation
+	  $('.animated-icon3').toggleClass('open');
+  
+	  // Take this line to third hamburger animation
+	  $('.animated-icon4').toggleClass('open');
+	});
+  
+  });
+
