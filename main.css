@@ -713,13 +713,19 @@ div#navbarSupportedContent22 {
     
 }
 
-nav#navbarid {
+/* nav#navbarid {
     line-height: 0;
 }
 
 nav#navbarid li {
     line-height: 1;
-}
+} */
+
+.lineheight0{line-height: 0;}
+.lineheight1{line-height: 1;}
+.lineheight11 {line-height: 1 !important;}
+.lineheight00{line-height: 0 !important;}
+
 
 a.nav-link.waves-effect.waves-light:hover {
     font-size: 100%;

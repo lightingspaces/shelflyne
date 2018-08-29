@@ -197,6 +197,20 @@ function doWork() {
 		navWhite()
 	} else {navBlack()}
 
+	if (fullpage_api.getActiveSection()['anchor'] !== "page1"){
+		document.querySelector('nav#navbarid').classList.add('lineheight0')
+		document.querySelectorAll('nav#navbarid li').forEach(function(item){
+			item.classList.add('lineheight1')
+
+	})
+	} else { 
+		document.querySelector('nav#navbarid').classList.remove('lineheight0')
+		document.querySelectorAll('nav#navbarid li').forEach(function(item){
+			item.classList.remove('lineheight1')
+
+	})
+	}
+
 
 }
 
