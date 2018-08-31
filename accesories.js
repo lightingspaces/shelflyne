@@ -204,18 +204,18 @@ function doWork() {
 			document.querySelector('button#btnnav').click()
 		}
 	}
-	if (fullpage_api.getActiveSection()['anchor'] != "page1"){
+	if (currentSlide != "page1"){
 		navtop2.classList.add('transparent')
 	} else {navtop2.classList.remove('transparent')
 	}
 
 
 	
-	if (fullpage_api.getActiveSection()['anchor'] === "page4"){
+	if (currentSlide === "page4"){
 		navWhite()
 	} else {navBlack()}
 
-	if (fullpage_api.getActiveSection()['anchor'] !== "page1"){
+	if (currentSlide !== "page1"){
 		document.querySelector('nav#navbarid').classList.add('lineheight0')
 		document.querySelectorAll('nav#navbarid li').forEach(function(item){
 			item.classList.add('lineheight1')
