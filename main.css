@@ -81,13 +81,18 @@ span#shelfL {
     background-repeat: no-repeat;
     background-size: cover;
 
+    
+
+}
+
+#web_1 #page_2 #sect2::before, #web_1 #page_3 #sect3::before, #web_1 #page_4 #sect4::before, #web_1 #page_7 #sect7::before{
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-
 }
+
 #page_2 #sect2, #page_3 #sect3, #page_4 #sect4, #sect7{
     position: absolute;
     content: '';
@@ -106,6 +111,8 @@ span#shelfL {
 }
 
 /*  */
+
+
 #page_2 #sect2::before {
     background-image: url('content/images/section_2-1_background_1080p.jpg');
 }
@@ -114,6 +121,10 @@ span#shelfL {
 }
 #page_4 #sect4::before {
     background-image: url('content/images/section_4_background_1080p.jpg');
+}
+
+#web_2 #page_7 #sect7::before {
+    background-image: url('content/images/web_2_page_1_background.png') !important;
 }
 /* #page_7 #sect7::before {
     background-image: url('content/images/section_7_background_1080p.png');
