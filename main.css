@@ -115,9 +115,9 @@ span#shelfL {
 #page_4 #sect4::before {
     background-image: url('content/images/section_4_background_1080p.jpg');
 }
-#page_7 #sect7::before {
+/* #page_7 #sect7::before {
     background-image: url('content/images/section_7_background_1080p.png');
-}
+} */
 
 /*  */
 

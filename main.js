@@ -214,10 +214,21 @@ var navBlack = function(){
 })
 }
 
+var lastSlide;
+var currentSlide;
 function doWork() {
 	$('#more').load('exp1.php');
 	repeater = setTimeout(doWork, 100);
 	// console.log(fullpage_api.getActiveSection()['anchor']);
+	currentSlide = fullpage_api.getActiveSection()['anchor'];
+	var isOpen2 = document.querySelector('div#navbarSupportedContent22').classList.contains('show')
+	if (currentSlide !== lastSlide){
+		// 
+		// 
+		if (newvarclick === 0 && isOpen2 === true){
+			document.querySelector('button#btnnav').click()
+		}
+	}
 	if (fullpage_api.getActiveSection()['anchor'] != "page1"){
 		navtop2.classList.add('transparent')
 	} else {navtop2.classList.remove('transparent')
@@ -244,7 +255,7 @@ function doWork() {
 
 	})
 	}
-
+	lastSlide = fullpage_api.getActiveSection()['anchor'];
 }
 
 doWork();
@@ -271,3 +282,28 @@ $(document).ready(function () {
   
   });
 
+// 
+
+
+// div.animated-icon4 { open}
+// button.navbar-toggler {show}
+// button.navbar-toggler.collapsed { 
+// 	aria-expanded="true"
+// }
+
+// div#navbarSupportedContent22 {
+// 	show
+// }
+
+var newvarclick;
+document.addEventListener("click", function(e) {
+	newvarclick = 0;
+		if (e.target.id === "#btnnav"){
+			newvarclick = 1;
+		}
+		var isOpen = document.querySelector('div#navbarSupportedContent22').classList.contains('show')
+		if (newvarclick === 0 && isOpen === true){
+			document.querySelector('button#btnnav').click()
+		}
+
+})
