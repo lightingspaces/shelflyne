@@ -770,6 +770,7 @@ div#navbarSupportedContent22 {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     border-radius: 0;
     /* padding: 10px 10px 10px 10px; */
+    z-index: -1;
 }
 
 
@@ -891,4 +892,8 @@ div#sect3content {
     -o-transition: .35s;
     transition: .35s;
     padding: 20px 20px 20px 20px;
+}
+
+li#firstitem {
+    margin-top: 40px;
 }
