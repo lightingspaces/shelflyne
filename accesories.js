@@ -204,7 +204,8 @@ function doWork() {
 			document.querySelector('button#btnnav').click()
 		}
 	}
-	if (currentSlide != "page1"){
+	// change here
+	if (currentSlide != "page15"){
 		navtop2.classList.add('transparent')
 	} else {navtop2.classList.remove('transparent')
 	}
@@ -270,3 +271,60 @@ $(document).ready(function () {
   
   })
   
+
+
+//   
+var hideSmallBtns = function(){
+	document.querySelectorAll(".colorbuttons_sm").forEach(function(e){
+		e.classList.add("hide")
+	})
+}
+document.querySelectorAll(".colorbuttons").forEach(function(e){
+	
+	e.addEventListener("mouseenter", function(){
+		e.classList.add("scaleUp")
+		console.log(e.id)
+		hideSmallBtns()
+		// e.parentElement.classList.add("show")
+		if (e.id==="colorbtn_1"){
+			document.querySelector("div#colorbtn_1small").classList.remove("hide")
+
+		}else if (e.id==="colorbtn_2"){
+			document.querySelector("div#colorbtn_2small").classList.remove("hide")
+
+		}else if (e.id==="colorbtn_3"){
+			document.querySelector("div#colorbtn_3small").classList.remove("hide")
+
+		}else if (e.id==="colorbtn_4"){
+			document.querySelector("div#colorbtn_4small").classList.remove("hide")
+
+		}
+	})
+
+})
+
+document.querySelectorAll(".btnparents").forEach(function(e){
+
+	e.addEventListener("mouseleave", function(){
+		hideSmallBtns()
+		if (e.id==="btnparent_1"){
+			document.querySelector("div#colorbtn_1").classList.remove("scaleUp")
+
+		}else if (e.id==="btnparent_2"){
+			document.querySelector("div#colorbtn_2").classList.remove("scaleUp")
+			
+		}else if (e.id==="btnparent_3"){
+			document.querySelector("div#colorbtn_3").classList.remove("scaleUp")
+			
+		}else if (e.id==="btnparent_4"){
+			document.querySelector("div#colorbtn_4").classList.remove("scaleUp")
+			
+		}
+	})
+})
+
+
+
+
+
+
