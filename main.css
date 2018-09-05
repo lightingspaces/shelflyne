@@ -895,5 +895,12 @@ div#sect3content {
 }
 
 li#firstitem {
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+button#btnnav {
+    right: 3px;
+    left: unset;
+    position: absolute;
+    top: 3px;
 }
