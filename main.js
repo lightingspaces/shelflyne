@@ -89,19 +89,19 @@ var imageSwitch = document.querySelector('div#sect2_btns input')
 
 // Switch button
 
-// document.querySelector('div#sect2_btns input').onclick = function(e) {
+document.querySelector('div#sect2_btns input').onclick = function(e) {
 
-//     if (e.target.checked === true ){
-// 		document.querySelector('#page_2 #sect2').classList.toggle('sect2_2_active')
-//     } else if (e.target.checked === false){
+    if (e.target.checked === true ){
+		document.querySelector('#page_2 #sect2').classList.toggle('sect2_2_active')
+    } else if (e.target.checked === false){
 
-// 		document.querySelector('#page_2 #sect2').classList.toggle('sect2_2_active')
-// 	}
+		document.querySelector('#page_2 #sect2').classList.toggle('sect2_2_active')
+	}
     
-// } 
-// 
-// 
-// 
+} 
+
+
+
 
 var bgs = document.querySelectorAll('#page_8 #backgrounds div')
 var addOpacity = function (){

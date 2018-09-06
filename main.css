@@ -144,6 +144,7 @@ span#shelfL {
 /*  */
 
 
+
 span.navbar-toggler-icon:hover {
     width: 1.6em;
     height: 1.6em;
@@ -324,7 +325,7 @@ div#sect2_btns .switch {
   /*  */
 
 #page_2 #sect2.sect2_2_active::before {
-    background-image: url('content/images/section_2-2_background_1080p.jpg');
+    background-image: url('content/images/Low_CRI_Image.png');
 }
 
 #textm p {opacity: 0.8;}
@@ -1085,3 +1086,70 @@ iframe#vime {
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
+
+
+  div#sect2_btns {
+    position: relative;
+    top: 50%;
+}
+
+
+div#drawn_line {
+    position: absolute;
+    width: 100%;
+    border: solid white 3px;
+    top: 25%;
+}
+
+
+div#sect2_btns .switch {
+    border: white solid 1px;
+}
+
+/*  */
+div#sect2_btns input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    right: 25%;
+    left: unset;
+}
+
+div#sect2_btns .slider:before {
+    position: absolute;
+    content: "";
+    height: 58px;
+    width: 52px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+div#sect2_btns .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: unset;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+div#sect2_btns .switch {
+    border: white solid 1px;
+}
+div#sect2_btns .switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 68px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/*  */
