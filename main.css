@@ -1066,3 +1066,11 @@ body{font-size: unset !important}
 } */
 
 
+div#vimeo_cover {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 3% 10%;
+}
