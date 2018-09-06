@@ -951,18 +951,18 @@ div#icon_more_2 {
 }
 
 img.icons_m {
-    width: 120px;
+    width: 200px;
     position: absolute;
     margin: auto;
 }
 
 img#arrow_left, img#arrow_left_2 {
-    margin-left: 35px;
+    margin-left: 60px;
     transition-duration: 0.2s;
 }
 
 img#arrow_right, img#arrow_right_2 {
-    margin-left: -25px;
+    margin-left: -40px;
     transition-duration: 0.2s;
 }
 
