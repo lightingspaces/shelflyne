@@ -257,6 +257,13 @@ sect2switch {
 /*  */
 /*  */
 
+page_5 {
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+}
+
 div#sect2_btns .switch {
     position: relative;
     display: inline-block;
@@ -301,7 +308,7 @@ div#sect2_btns .switch {
     /* box-shadow: 0 0 1px #2196F3; */
   }
   
-  div#sect2_btns input:checked + .slider:before {
+  div#sect2_btns input:checked + .slider:before{
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
@@ -520,7 +527,7 @@ div#colorbtn_4 {
 }
 
 #background_3{
-    background-image: url(content/images/shelve_red_1080p.jpg);
+    background-image: url(content/images/Room_Test_006_Test.png);
 }
 
 #poster_sign{
@@ -1025,3 +1032,37 @@ div#footerleft {
     height: 120%;
 }
 body{font-size: unset !important}
+
+#poster_row_index{
+    background-image: url(content/images/Stacked_Signs_Test_001.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#poster_row{
+    background-image: url(content/images/Accessories_Sign_2400x1600.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.poster_bg_1{background-image: url(content/images/Accessories_Sign_2400x1600.png);}
+.poster_bg_2{background-image: url(content/images/Accessories_Sign_2400x1600_Test_002.png);}
+
+
+/* #page9_bg{
+    width: 100%;
+    height:100%;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page9_bg{
+    background-image: url(content/images/Stacked_Signs_Test_001.png);
+} */
+
+
