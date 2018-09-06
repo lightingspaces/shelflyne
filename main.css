@@ -323,7 +323,7 @@ div#sect2_btns .switch {
 #posters {
     position: relative;
     height: 100%;
-    width:40%;
+    width:100%;
     left: 5%;
     /* background-color: red; */
     /* background-image: url('content/images/section_7-1_poster_600x1080.jpg') */
@@ -335,7 +335,7 @@ div#sect2_btns .switch {
     margin-top: 0;
     top: 10%;
     right: 5%;
-    width: 40%;
+    width: 80%;
     text-align: right;
     
 
@@ -923,4 +923,62 @@ div#navbarSupportedContent22 {
     -o-transition: .35s;
     transition: .35s;
     padding: 20px 20px 20px 20px;
+}
+
+
+#page_6 .row, #page_9 .row, #page_7 .row {
+    height: 100%;}
+
+    
+#adiff, #page_7 #text {
+    position: relative;
+    /* margin-top: 0; */
+    top: 10%;
+    left: 5%;
+    width: 100%;
+    text-align: left;
+}
+
+div#icon_more {
+    position: absolute;
+    bottom: 55%;
+    left: 35%;
+}
+div#icon_more_2 {
+    position: absolute;
+    bottom: 55%;
+    right: 45%;
+}
+
+img.icons_m {
+    width: 120px;
+    position: absolute;
+    margin: auto;
+}
+
+img#arrow_left, img#arrow_left_2 {
+    margin-left: 35px;
+    transition-duration: 0.2s;
+}
+
+img#arrow_right, img#arrow_right_2 {
+    margin-left: -25px;
+    transition-duration: 0.2s;
+}
+
+/* 
+
+
+
+*/
+
+
+.set   {
+    margin-left: 0 !important;
+
+}
+
+.show_i {
+    visibility: visible;
+    transition-delay: 0.1s;
 }
