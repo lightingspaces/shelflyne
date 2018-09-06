@@ -1004,3 +1004,9 @@ div#header_sect2, div#header_sect4  {
 div#text_sect2, div#text_sect4 {
     padding: 0 2% 0 2%;
 }
+
+
+div#footerleft {
+    top: 15%;
+    position: relative;
+}
