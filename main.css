@@ -5,27 +5,34 @@ html {
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     html {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
       }
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     html {
-        font-size: 1rem;
+        font-size: 1rem !important;
       }
  }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     html {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
       }
  }
 
  @media (min-width: 3000px) { 
     html {
-        font-size: 3.2rem;
+        font-size: 2.3rem !important;
+      }
+ }
+
+
+ @media (min-width: 3700px) { 
+    html {
+        font-size: 3.1rem !important;
       }
  }
 
@@ -1006,3 +1013,15 @@ div#footerleft {
     top: 15%;
     position: relative;
 }
+
+
+#myVideo2 {
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 120%;
+    height: 120%;
+}
+body{font-size: unset !important}
