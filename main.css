@@ -44,11 +44,7 @@ html {
       }
  }
 
- iframe#vime {
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
+ 
 
 
 /*  */
@@ -979,6 +975,10 @@ img.icons_m {
     margin: auto;
 }
 
+img.icons_m:hover{
+    transform: scale(1.1)
+}
+
 img#arrow_left, img#arrow_left_2 {
     margin-left: 60px;
     transition-duration: 0.2s;
@@ -1041,7 +1041,7 @@ body{font-size: unset !important}
 
 }
 #poster_row{
-    background-image: url(content/images/Accessories_Sign_2400x1600.png);
+    /* background-image: url(content/images/Accessories_Sign_2400x1600.png); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1073,4 +1073,13 @@ div#vimeo_cover {
     top: 0;
     left: 0;
     padding: 3% 10%;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
+
+iframe#vime {
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }

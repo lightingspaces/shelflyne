@@ -134,19 +134,22 @@ btns.forEach(function(btn){
 
 		if (btn.id === 'btn_1'){
 			addOpacity2()
-			document.querySelector('#page_9 #poster_1').classList.add('fadeIn')
+			document.querySelector('#page_9 div#poster_row').classList.remove('poster_bg_2')
+			document.querySelector('#page_9 div#poster_row').classList.add('poster_bg_1')
 			document.querySelector('#page_9 #list_1').classList.add('fadeIn')
 
 		}else if (btn.id === 'btn_2'){
 			addOpacity2()
-			document.querySelector('#page_9 #poster_2').classList.add('fadeIn')
+			document.querySelector('#page_9 div#poster_row').classList.remove('poster_bg_1')
+			document.querySelector('#page_9 div#poster_row').classList.add('poster_bg_2')
 			document.querySelector('#page_9 #list_2').classList.add('fadeIn')
 
-		}else if (btn.id === 'btn_3'){
-			addOpacity2()
-			document.querySelector('#page_9 #poster_3').classList.add('fadeIn')
-			document.querySelector('#page_9 #list_3').classList.add('fadeIn')
+		// }else if (btn.id === 'btn_3'){
+		// 	addOpacity2()
+		// 	document.querySelector('#page_9 #poster_3').classList.add('fadeIn')
+		// 	document.querySelector('#page_9 #list_3').classList.add('fadeIn')
 
+		// }
 		}
 
 	})
