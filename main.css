@@ -867,18 +867,15 @@ div#sect3content {
     display: inline-block;
 }
 
-#smbtn_1_1{background-color: red;}
-#smbtn_1_2{background-color: red;}
-#smbtn_1_3{background-color: red;}
-#smbtn_2_1{background-color: red;}
-#smbtn_2_2{background-color: red;}
-#smbtn_2_3{background-color: red;}
-#smbtn_3_1{background-color: red;}
-#smbtn_3_2{background-color: red;}
-#smbtn_3_3{background-color: red;}
-#smbtn_4_1{background-color: red;}
-#smbtn_4_2{background-color: red;}
-#smbtn_4_3{background-color: red;}
+#smbtn_1_1, #smbtn_2_1, #smbtn_3_1, #smbtn_4_1{background-color: rgb(204, 204, 204);}
+#smbtn_1_2, #smbtn_2_2, #smbtn_3_2, #smbtn_4_2 {background-color: black;}
+#smbtn_1_3, #smbtn_2_3, #smbtn_3_3, #smbtn_4_3{
+    background-image: url(content/images/Brass_Button.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 .btnparents {
