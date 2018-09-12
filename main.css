@@ -1182,6 +1182,13 @@ p#footerp, p.omaimg {
 
 .omaimgr {
     margin-top: 1rem;
+    
+}
+
+.omaimgr {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 3px solid;
 }
 
 img.omaimgl {
