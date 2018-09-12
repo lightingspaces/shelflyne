@@ -1180,12 +1180,10 @@ p#footerp, p.omaimg {
     min-height: unset;
 }
 
-img.omaimgl {
-    margin-top: 15px;
-}
+
 
 img.omaimgl {
-    margin-top: 15px;
+    margin-top: 1rem;
     width: 40%;
     left: 30%;
 }
