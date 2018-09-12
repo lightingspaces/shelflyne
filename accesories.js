@@ -290,16 +290,16 @@ document.querySelectorAll(".colorbuttons").forEach(function(e){
 		hideSmallBtns()
 		// e.parentElement.classList.add("show")
 		if (e.id==="colorbtn_1"){
-			document.querySelector("div#colorbtn_1small").classList.remove("hide")
+			document.querySelector("#colorbtn_1small").classList.remove("hide")
 
 		}else if (e.id==="colorbtn_2"){
-			document.querySelector("div#colorbtn_2small").classList.remove("hide")
+			document.querySelector("#colorbtn_2small").classList.remove("hide")
 
 		}else if (e.id==="colorbtn_3"){
-			document.querySelector("div#colorbtn_3small").classList.remove("hide")
+			document.querySelector("#colorbtn_3small").classList.remove("hide")
 
 		}else if (e.id==="colorbtn_4"){
-			document.querySelector("div#colorbtn_4small").classList.remove("hide")
+			document.querySelector("#colorbtn_4small").classList.remove("hide")
 
 		}
 	})
@@ -311,16 +311,16 @@ document.querySelectorAll(".btnparents").forEach(function(e){
 	e.addEventListener("mouseleave", function(){
 		hideSmallBtns()
 		if (e.id==="btnparent_1"){
-			document.querySelector("div#colorbtn_1").classList.remove("scaleUp")
+			document.querySelector("#colorbtn_1").classList.remove("scaleUp")
 
 		}else if (e.id==="btnparent_2"){
-			document.querySelector("div#colorbtn_2").classList.remove("scaleUp")
+			document.querySelector("#colorbtn_2").classList.remove("scaleUp")
 			
 		}else if (e.id==="btnparent_3"){
-			document.querySelector("div#colorbtn_3").classList.remove("scaleUp")
+			document.querySelector("#colorbtn_3").classList.remove("scaleUp")
 			
 		}else if (e.id==="btnparent_4"){
-			document.querySelector("div#colorbtn_4").classList.remove("scaleUp")
+			document.querySelector("#colorbtn_4").classList.remove("scaleUp")
 			
 		}
 	})

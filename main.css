@@ -384,7 +384,8 @@ div#accbtns {
     margin-top: 10%;
 }
 
-div#accbtns div#btn_1, div#accbtns div#btn_2, div#accbtns div#btn_3 {
+/* div#accbtns div#btn_1, div#accbtns div#btn_2, div#accbtns div#btn_3 {*/
+    #accbtns #btn_1, #accbtns #btn_2, #accbtns #btn_3 { 
     height: 100%;
     width: 80px;
     /* margin-right: 10px; */
@@ -439,7 +440,8 @@ div#accbtns div#btn_1, div#accbtns div#btn_2, div#accbtns div#btn_3 {
 
 /* Background switching section 8 */
 
-div#colorbtns {
+/* div#colorbtns { */
+    #colorbtns {
     height: 110px;
     position: absolute;
     left: 0;
@@ -447,7 +449,8 @@ div#colorbtns {
     bottom: 100px;
 }
 
-div#colorbtnssmall {
+/* div#colorbtnssmall { */
+    #colorbtnssmall {
     height: 28px;
     position: absolute;
     left: 0;
@@ -455,13 +458,15 @@ div#colorbtnssmall {
 
 }
 
-div#colorbtns div#colorbtn_1, div#colorbtns div#colorbtn_2, div#colorbtns div#colorbtn_3, div#colorbtns div#colorbtn_4 {
+/* div#colorbtns div#colorbtn_1, div#colorbtns div#colorbtn_2, div#colorbtns div#colorbtn_3, div#colorbtns div#colorbtn_4 { */
+    #colorbtns #colorbtn_1, #colorbtns #colorbtn_2, #colorbtns #colorbtn_3, #colorbtns #colorbtn_4 {
     height: 80px;
     width: 80px;
     /* margin-right: 10px; */
     display: inline-block;
 }
-div#colorbtnssmall div#colorbtn_1small, div#colorbtnssmall div#colorbtn_2small, div#colorbtnssmall div#colorbtn_3small, div#colorbtnssmall div#colorbtn_4small {
+/* div#colorbtnssmall div#colorbtn_1small, div#colorbtnssmall div#colorbtn_2small, div#colorbtnssmall div#colorbtn_3small, div#colorbtnssmall div#colorbtn_4small { */
+    #colorbtnssmall #colorbtn_1small, #colorbtnssmall #colorbtn_2small, #colorbtnssmall #colorbtn_3small, #colorbtnssmall #colorbtn_4small {
     height: 20px;
     width: 88px;
 
@@ -473,16 +478,20 @@ div#colorbtnssmall div#colorbtn_1small, div#colorbtnssmall div#colorbtn_2small, 
     /* margin-right: 10px; */
 
 }
-div#colorbtn_1 {
-    background-color: white;
-}
-div#colorbtn_2 {
+/* div#colorbtn_1 { */
+    #colorbtn_1 {
     background-color: black;
 }
-div#colorbtn_3 {
+/* div#colorbtn_2 { */
+    #colorbtn_2 {
+    background-color: white;
+}
+/* div#colorbtn_3 { */
+    #colorbtn_3 {
     background-color: red;
 }
-div#colorbtn_4 {
+/* div#colorbtn_4 { */
+    #colorbtn_4 {
     background-color: red;
 }
 
@@ -1193,4 +1202,20 @@ img#sendmail {
     min-width: 50px;
     position: relative;
     margin-top: 40px;
+}
+
+#colorbtn_3 {
+    background-image: url(content/images/Dark_Walnut_Option_Button-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#colorbtn_4 {
+    background-image: url(content/images/Marble_Option_Button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
