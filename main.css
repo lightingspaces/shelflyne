@@ -1171,13 +1171,23 @@ p#footerp, p.omaimg {
     font-size: 0.75rem;
 }
 
-.omaimg {
+.omaimg, .omaimgl {
     position: relative;
     left: 25%;
     width: 50%;
     height: 50%;
     max-height: unset;
     min-height: unset;
+}
+
+img.omaimgl {
+    margin-top: 15px;
+}
+
+img.omaimgl {
+    margin-top: 15px;
+    width: 40%;
+    left: 30%;
 }
 
 p.omaimg {
