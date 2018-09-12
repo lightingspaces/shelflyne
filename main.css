@@ -1171,7 +1171,7 @@ p#footerp, p.omaimg {
     font-size: 0.75rem;
 }
 
-.omaimg, .omaimgl {
+.omaimg, .omaimgl, .omaimgr {
     position: relative;
     left: 25%;
     width: 50%;
@@ -1180,10 +1180,12 @@ p#footerp, p.omaimg {
     min-height: unset;
 }
 
-
+.omaimgr {
+    margin-top: 1rem;
+}
 
 img.omaimgl {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     width: 40%;
     left: 30%;
 }
@@ -1193,7 +1195,7 @@ p.omaimg {
 }
 
 img.vimeoicon {
-    width: 50px;
+    width: 5%;
     height: auto;
 }
 
