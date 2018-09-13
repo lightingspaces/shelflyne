@@ -1204,6 +1204,8 @@ p.omaimg {
 img.vimeoicon {
     width: 6%;
     height: 6%;
+    min-width: 50px;
+    min-height: 40px;
 }
 
 img#sendmail {
