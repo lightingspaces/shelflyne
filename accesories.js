@@ -95,20 +95,57 @@ var addOpacity = function (){
 	})
 
 }
-var btns2 =  document.querySelectorAll('#page_8 .colorbuttons');
+var btns2 =  document.querySelectorAll('#page_8 .colorbuttons, #page_8 .tinybtns');
 
 btns2.forEach(function(btn){
-	btn.addEventListener('mouseenter', function(){
+	btn.addEventListener('mouseenter', function(e){
+		console.log(btn.id + ' ...')
 
 		if (btn.id === 'colorbtn_1'){
 			addOpacity()
 			document.querySelector('#page_8 #background_1').classList.add('fadeIn')
-		}else if (btn.id === 'colorbtn_2'){
+		}else if (btn.id === 'smbtn_1_1'){
 			addOpacity()
 			document.querySelector('#page_8 #background_2').classList.add('fadeIn')
-		}else if (btn.id === 'colorbtn_3'){
+		}else if (btn.id === 'smbtn_1_2'){
 			addOpacity()
 			document.querySelector('#page_8 #background_3').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_1_3'){
+			addOpacity()
+			document.querySelector('#page_8 #background_4').classList.add('fadeIn')
+
+		}else if (btn.id === 'colorbtn_2'){
+			addOpacity()
+			document.querySelector('#page_8 #background_5').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_2_1'){
+			addOpacity()
+			document.querySelector('#page_8 #background_6').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_2_2'){
+			addOpacity()
+			document.querySelector('#page_8 #background_7').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_2_3'){
+			addOpacity()
+			document.querySelector('#page_8 #background_8').classList.add('fadeIn')
+
+		}else if (btn.id === 'colorbtn_3'){
+			addOpacity()
+			document.querySelector('#page_8 #background_9').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_3_1'){
+			addOpacity()
+			document.querySelector('#page_8 #background_10').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_3_2'){
+			addOpacity()
+			document.querySelector('#page_8 #background_11').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_3_3'){
+			addOpacity()
+			document.querySelector('#page_8 #background_12').classList.add('fadeIn')
 
 		}
 
@@ -300,6 +337,33 @@ document.querySelectorAll(".colorbuttons").forEach(function(e){
 
 		}else if (e.id==="colorbtn_4"){
 			document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_1_1"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_1_2"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_1_3"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_2_1"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_2_2"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_2_3"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_3_1"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_3_2"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
+
+		// }else if (e.id==="colorbtn_3_3"){
+		// 	document.querySelector("#colorbtn_4small").classList.remove("hide")
 
 		}
 	})

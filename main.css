@@ -511,7 +511,8 @@ div#colorbtnssmall div#colorbtn_1small, div#colorbtnssmall div#colorbtn_2small, 
 }
 
 
-#background_1, #background_2, #background_3{
+#background_1, #background_2, #background_3, #background_4, #background_5, #background_6, #background_7, #background_8, #background_9
+, #background_10, #background_11, #background_12{
     height: 100%;
     width: 100%;
     position: absolute;
@@ -525,16 +526,53 @@ div#colorbtnssmall div#colorbtn_1small, div#colorbtnssmall div#colorbtn_2small, 
 }
 
 #background_1{
-    background-image: url(content/images/shelve_white_1080p.jpg);
+    background-image: url(content/images/01.png);
 }
 
 #background_2{
-    background-image: url(content/images/shelve_black_1080p.jpg);
+    background-image: url(content/images/02.png);
 }
 
 #background_3{
-    background-image: url(content/images/Room_Test_006_Test.png);
+    background-image: url(content/images/03.png);
 }
+
+#background_4{
+    background-image: url(content/images/04.png);
+}
+
+#background_5{
+    background-image: url(content/images/05.png);
+}
+
+#background_6{
+    background-image: url(content/images/06.png);
+}
+
+#background_7{
+    background-image: url(content/images/07.png);
+}
+
+#background_8{
+    background-image: url(content/images/08.png);
+}
+
+#background_9{
+    background-image: url(content/images/09.png);
+}
+
+#background_10{
+    background-image: url(content/images/10.png);
+}
+
+#background_11{
+    background-image: url(content/images/11.png);
+}
+
+#background_12{
+    background-image: url(content/images/12.png);
+}
+
 
 #poster_sign{
     background-image: url(content/images/Illuminated_sign_poster.png);
