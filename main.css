@@ -1202,8 +1202,8 @@ p.omaimg {
 }
 
 img.vimeoicon {
-    width: 5%;
-    height: auto;
+    width: 6%;
+    height: 6%;
 }
 
 img#sendmail {
@@ -1233,3 +1233,5 @@ div#colorbtn_4 {
 
 
 }
+
+.mbotcero {margin-bottom: 0;}
