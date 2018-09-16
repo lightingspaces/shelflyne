@@ -242,9 +242,13 @@ function doWork() {
 	{playvideo=true}
 
 	if (currentSlide === 'page6' && playvideo===true){ 
-			document.querySelector('video#myVideo3').play();
-			console.log('sss')
-			playvideo = false;
+		playvideo = false;
+		setTimeout(func, 500);
+    		function func() {
+				document.querySelector('video#myVideo3').play();
+				console.log('sss')
+				
+			}
 		}
 	
 	if (currentSlide === "page8"){

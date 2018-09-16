@@ -1277,11 +1277,13 @@ div#colorbtn_4 {
 .mbotcero {margin-bottom: 0;}
 
 #cribg_1 { 
-    background-image: url(content/images/section_2-1_background_1080p.png);
+    background-image: url(content/images/Low_CRI_Image.png);
+    
 }   
 
 #cribg_2 {
-    background-image: url(content/images/Low_CRI_Image.png);
+    background-image: url(content/images/section_2-1_background_1080p.png);
+    
 }
 
 

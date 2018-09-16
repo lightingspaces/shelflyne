@@ -3,6 +3,9 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    left: 5%;
+    right: 5%;
+    width: 90%;
   }
   
   input[type=range] {
@@ -13,11 +16,12 @@
     top: 0;
     margin: 0;
     left: 0;
+    border-radius: 10%;
   }
   #range-value-bar {
     width: 100%;
     content:"0";
-    background-color: #FC6E50;
+    background-color: #dab3aa;
     position: absolute;
     z-index: 10000;
     height: 25px;
@@ -64,12 +68,15 @@
     height: 53px;
     width: 53px;
     border-radius: 30px;
-    background: #FC6E50;
+    background: #dab3aa;
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -13.5px;
     position: relative;
     z-index: 1000000000;
+    /*  */
+    width: 80px;
+    border-radius: 0;
   }
   input[type=range]::-moz-range-track {
     width: 100%;
