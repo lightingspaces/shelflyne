@@ -480,11 +480,13 @@ div#colorbtnssmall div#colorbtn_1small, div#colorbtnssmall div#colorbtn_2small, 
 }
 /* div#colorbtn_1 { */
     #colorbtn_1 {
-    background-color: black;
+    background-color: white;
+    
 }
 /* div#colorbtn_2 { */
     #colorbtn_2 {
-    background-color: white;
+    background-color: black;
+    
 }
 /* div#colorbtn_3 { */
     #colorbtn_3 {
@@ -906,8 +908,9 @@ div#sect3content {
 }
 
 #smbtn_1_1, #smbtn_2_1, #smbtn_3_1, #smbtn_4_1{background-color: rgb(204, 204, 204);}
-#smbtn_1_2, #smbtn_2_2, #smbtn_3_2, #smbtn_4_2 {background-color: black;}
-#smbtn_1_3, #smbtn_2_3, #smbtn_3_3, #smbtn_4_3{
+#smbtn_1_3, #smbtn_2_3, #smbtn_3_3, #smbtn_4_3 {background-color: black;}
+
+#smbtn_1_2, #smbtn_2_2, #smbtn_3_2, #smbtn_4_2{
     background-image: url(content/images/Brass_Button.jpeg);
     background-position: center;
     background-repeat: no-repeat;

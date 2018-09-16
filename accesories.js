@@ -106,44 +106,60 @@ btns2.forEach(function(btn){
 			document.querySelector('#page_8 #background_1').classList.add('fadeIn')
 		}else if (btn.id === 'smbtn_1_1'){
 			addOpacity()
-			document.querySelector('#page_8 #background_2').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_1').classList.add('fadeIn')
 		}else if (btn.id === 'smbtn_1_2'){
 			addOpacity()
-			document.querySelector('#page_8 #background_3').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_2').classList.add('fadeIn')
 
 		}else if (btn.id === 'smbtn_1_3'){
 			addOpacity()
-			document.querySelector('#page_8 #background_4').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_3').classList.add('fadeIn')
 
 		}else if (btn.id === 'colorbtn_2'){
 			addOpacity()
-			document.querySelector('#page_8 #background_5').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_4').classList.add('fadeIn')
 
 		}else if (btn.id === 'smbtn_2_1'){
 			addOpacity()
-			document.querySelector('#page_8 #background_6').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_4').classList.add('fadeIn')
 
 		}else if (btn.id === 'smbtn_2_2'){
 			addOpacity()
-			document.querySelector('#page_8 #background_7').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_5').classList.add('fadeIn')
 
 		}else if (btn.id === 'smbtn_2_3'){
 			addOpacity()
-			document.querySelector('#page_8 #background_8').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_6').classList.add('fadeIn')
 
 		}else if (btn.id === 'colorbtn_3'){
 			addOpacity()
-			document.querySelector('#page_8 #background_9').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_7').classList.add('fadeIn')
 
 		}else if (btn.id === 'smbtn_3_1'){
 			addOpacity()
-			document.querySelector('#page_8 #background_10').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_7').classList.add('fadeIn')
 
 		}else if (btn.id === 'smbtn_3_2'){
 			addOpacity()
-			document.querySelector('#page_8 #background_11').classList.add('fadeIn')
+			document.querySelector('#page_8 #background_8').classList.add('fadeIn')
 
 		}else if (btn.id === 'smbtn_3_3'){
+			addOpacity()
+			document.querySelector('#page_8 #background_9').classList.add('fadeIn')
+
+		}else if (btn.id === 'colorbtn_4'){
+			addOpacity()
+			document.querySelector('#page_8 #background_10').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_4_1'){
+			addOpacity()
+			document.querySelector('#page_8 #background_10').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_4_2'){
+			addOpacity()
+			document.querySelector('#page_8 #background_11').classList.add('fadeIn')
+
+		}else if (btn.id === 'smbtn_4_3'){
 			addOpacity()
 			document.querySelector('#page_8 #background_12').classList.add('fadeIn')
 
