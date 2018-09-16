@@ -89,16 +89,16 @@ var imageSwitch = document.querySelector('div#sect2_btns input')
 
 // Switch button
 
-document.querySelector('div#sect2_btns input').onclick = function(e) {
+// document.querySelector('div#sect2_btns input').onclick = function(e) {
 
-    if (e.target.checked === true ){
-		document.querySelector('#page_2 #sect2').classList.toggle('sect2_2_active')
-    } else if (e.target.checked === false){
+//     if (e.target.checked === true ){
+// 		document.querySelector('#page_2 #sect2').classList.toggle('sect2_2_active')
+//     } else if (e.target.checked === false){
 
-		document.querySelector('#page_2 #sect2').classList.toggle('sect2_2_active')
-	}
+// 		document.querySelector('#page_2 #sect2').classList.toggle('sect2_2_active')
+// 	}
     
-} 
+// } 
 
 
 
@@ -213,7 +213,7 @@ var navBlack = function(){
 		item.setAttribute('style','background-color: #333;')
 })
 }
-
+var playvideo = false;
 var lastSlide;
 var currentSlide;
 function doWork() {
@@ -230,12 +230,22 @@ function doWork() {
 		}
 	}
 	// change here.
-	if (currentSlide != "page15"){
+	if (currentSlide !== "page15"){
 		navtop2.classList.add('transparent')
 	// } else {navtop2.classList.remove('transparent')
 	}
+	// 
+// 
+// 
+	// 
+	if (currentSlide !== 'page6')
+	{playvideo=true}
 
-
+	if (currentSlide === 'page6' && playvideo===true){ 
+			document.querySelector('video#myVideo3').play();
+			console.log('sss')
+			playvideo = false;
+		}
 	
 	if (currentSlide === "page8"){
 		navWhite()
@@ -348,4 +358,9 @@ document.querySelector('#border_icon_2').addEventListener('mouseleave', function
 	document.querySelector('#arrow_right_2').classList.remove('set')
 	document.querySelector('#icon_more_text_2').classList.add('hide')
 	document.querySelector('#icon_more_text_2').classList.remove('show_i')
+})
+
+document.querySelector('input[type="range').addEventListener('change', function(){
+	console.log('sss')
+	console.log(document.querySelector('input[type="range').value)
 })

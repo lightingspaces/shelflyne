@@ -1073,7 +1073,7 @@ div#footerleft {
 }
 
 
-#myVideo2 {
+#myVideo2, #myVideo3 {
     position: absolute;
     left: -10%;
     bottom: 0;
@@ -1275,3 +1275,28 @@ div#colorbtn_4 {
 }
 
 .mbotcero {margin-bottom: 0;}
+
+#cribg_1 { 
+    background-image: url(content/images/section_2-1_background_1080p.png);
+}   
+
+#cribg_2 {
+    background-image: url(content/images/Low_CRI_Image.png);
+}
+
+
+#cribg_1, #cribg_2 {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.padding0{ padding: 0;}
