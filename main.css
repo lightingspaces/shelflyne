@@ -1247,6 +1247,7 @@ img.vimeoicon {
     height: 6%;
     min-width: 50px;
     min-height: 40px;
+    background-color: black;
 }
 
 img#sendmail {
