@@ -1306,3 +1306,56 @@ div#colorbtn_4 {
 
 
 .padding0{ padding: 0;}
+
+#rangeslider{position: absolute;}
+
+
+/* 
+
+
+*/
+
+
+div#range_slider {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.rangeslider--vertical {
+    margin: 0 auto;
+}
+
+.rangeslider--vertical {
+    height: 100%;
+}
+
+
+#range_slider label, #range_slider output {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+
+.rangeslider__handle {
+    width: 30px;
+    height: 70px;
+    border-radius: 0;
+}
+
+.rangeslider--vertical {
+    height: 100%;
+    width: 10px;
+    border-radius: 0;
+}
+
+.rangeslider__fill {
+    background: #53576d;
+}
+
+

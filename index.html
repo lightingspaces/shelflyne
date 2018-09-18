@@ -19,8 +19,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <!--CDN-->
     <link rel="stylesheet" type="text/css" href="fullPage.js-master/src/fullpage.css" />
+    <link rel="stylesheet" href="rangeslider.js-2.3.0/rangeslider.js-2.3.0/rangeslider.css">
     <link rel="stylesheet" type="text/css" href="main.css" />
-    <link rel="stylesheet" href="rangeslider.css">
+    
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -119,26 +120,18 @@
                     value="5" data-orientation="vertical"> -->
 
 
-                    <div class="range-slider-container">
-                        <input type="range" class="range-slider" />
-                        <span id="range-value-bar"></span>
-                        <span id="range-value">0</span>
-                      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <div id="range_slider">
+                    <input
+                        type="range"
+                        min="1"                    
+                        max="80"                  
+                        step="1"                   
+                        value="40"                 
+                        data-orientation="vertical" 
+                    >
+                    <!-- <output></output> -->
+                    </div>
 
                     <!-- </div> -->
 
@@ -479,7 +472,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     
-    <script type="text/javascript" src="rangeslider.js"></script>
+    <!-- <script type="text/javascript" src="rangeslider.js"></script> -->
 
     <script type="text/javascript" src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
     <!-- <script type="text/javascript" src="fullPage.js-master/src/fullpage.js"></script> -->
@@ -488,7 +481,7 @@
     <script type="text/javascript" src="fullPage.js-master/dist/fullpage.extensions.min.js"></script>
 <!--  -->
 
-
+    <script type="text/javascript" src="rangeslider.js-2.3.0/rangeslider.js-2.3.0/rangeslider.js"></script>
 <!--  -->
     <script src="main.js"></script>
 </body>

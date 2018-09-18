@@ -75,6 +75,7 @@ var myFullpage = new fullpage('#fullpage', {
 	afterSlideLoad: function(section, origin, destination, direction){},
 	onSlideLeave: function(section, origin, destination, direction){}
 });
+// 
 
 
 
@@ -368,3 +369,31 @@ document.querySelector('input[type="range').addEventListener('change', function(
 	console.log('sss')
 	console.log(document.querySelector('input[type="range').value)
 })
+
+
+// 
+// 
+var img2 = document.querySelector('div#cribg_2');
+var $element = $('#range_slider input[type="range"]');
+var $output = $('#range_slider output');
+
+function updateOutput(el, val) {
+  el.textContent = val;
+}
+
+$element
+  .rangeslider({
+    polyfill: false,
+    onInit: function() {
+	//   updateOutput($output[0], this.value);
+	  img2.setAttribute('style', "margin-top:-40%;");
+    }
+  })
+  .on('#range_slider input', function() {
+	// updateOutput($output[0], this.value);
+	var range_value = this.value
+	var range_value = -range_value;
+	// var total = range_value - 100;
+	console.log(range_value)
+	img2.setAttribute('style', "margin-top:"+range_value+"%;");
+  });
