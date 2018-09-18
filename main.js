@@ -357,31 +357,40 @@ document.addEventListener("click", function(e) {
 
 document.querySelector('#border_icon').addEventListener('mouseenter', function(){
 	document.querySelector('#arrow_left').classList.add('set')
+	document.querySelector('img#icon_more_text').classList.add('set')
+
 	document.querySelector('#arrow_right').classList.add('set')
-	document.querySelector('#icon_more_text').classList.remove('hide')
+	document.querySelector('div#obstacle').classList.add('set')
+	// document.querySelector('#icon_more_text').classList.remove('hide')
 	document.querySelector('#icon_more_text').classList.add('show_i')
 
 })
 
 document.querySelector('#border_icon').addEventListener('mouseleave', function(){
 	document.querySelector('#arrow_left').classList.remove('set')
+	document.querySelector('img#icon_more_text').classList.remove('set')
 	document.querySelector('#arrow_right').classList.remove('set')
-	document.querySelector('#icon_more_text').classList.add('hide')
+	document.querySelector('div#obstacle').classList.remove('set')
+	// document.querySelector('#icon_more_text').classList.add('hide')
 	document.querySelector('#icon_more_text').classList.remove('show_i')
 })
 
 document.querySelector('#border_icon_2').addEventListener('mouseenter', function(){
 	document.querySelector('#arrow_left_2').classList.add('set')
+	document.querySelector('img#icon_more_text_2').classList.add('set')
 	document.querySelector('#arrow_right_2').classList.add('set')
-	document.querySelector('#icon_more_text_2').classList.remove('hide')
+	document.querySelector('div#obstacle_2').classList.add('set')
+	// document.querySelector('#icon_more_text_2').classList.remove('hide')
 	document.querySelector('#icon_more_text_2').classList.add('show_i')
 
 })
 
 document.querySelector('#border_icon_2').addEventListener('mouseleave', function(){
 	document.querySelector('#arrow_left_2').classList.remove('set')
+	document.querySelector('img#icon_more_text_2').classList.remove('set')
 	document.querySelector('#arrow_right_2').classList.remove('set')
-	document.querySelector('#icon_more_text_2').classList.add('hide')
+	document.querySelector('div#obstacle_2').classList.remove('set')
+	// document.querySelector('#icon_more_text_2').classList.add('hide')
 	document.querySelector('#icon_more_text_2').classList.remove('show_i')
 })
 
