@@ -3,7 +3,7 @@ var myFullpage = new fullpage('#fullpage', {
 	licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 	menu: '#menu',
 	lockAnchors: false,
-	anchors:['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+	anchors:['home', 'cri', 'modular', 'installation', 'installation_video', 'seasonal_look', 'accessories', 'contact'],
 	navigation: true,
 	navigationPosition: 'left',
 	navigationTooltips: [],
