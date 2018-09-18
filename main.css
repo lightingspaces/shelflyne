@@ -956,7 +956,7 @@ div#sect3content {
 }
 
 li#firstitem {
-    margin-top: 30px;
+    margin-top: 30%;
 }
 
 button#btnnav {
@@ -1235,7 +1235,7 @@ p#footerp, p.omaimg {
     border-top: 3px solid;
 }
 
-img.omaimgl {
+.omaimgl {
     /* margin-top: 1rem; */
     width: 40%;
     left: 30%;
