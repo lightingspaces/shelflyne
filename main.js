@@ -214,6 +214,8 @@ var navBlack = function(){
 		item.setAttribute('style','background-color: #333;')
 })
 }
+var prevSlide;
+var numSlide;
 var playvideo = false;
 var lastSlide;
 var currentSlide;
@@ -239,19 +241,34 @@ function doWork() {
 // 
 // 
 	// 
-	if (currentSlide !== 'page6')
-	{playvideo=true}
+	if (currentSlide !== 'page6'){playvideo=true
+	
+		if (prevSlide <= 5){
+			// document.querySelector('#videosource').getAttribute('src');
+			document.querySelector('#videosource').removeAttribute('src')
+			document.querySelector('#videosource').setAttribute('src', 'content/videos/Shelf_Falling_Animation.mp4');
+
+		}else if (prevSlide >= 7){
+			document.querySelector('#videosource').removeAttribute('src')
+			document.querySelector('#videosource').setAttribute('src', 'content/videos/Shelf_Falling_Animation_Reversed.mp4');
+
+		}
+	
+	}
 
 	if (currentSlide === 'page6' && playvideo===true){ 
 		playvideo = false;
+		
+
+
 		setTimeout(func, 500);
     		function func() {
 				document.querySelector('video#myVideo3').play();
-				console.log('sss')
 				
 			}
 		}
-	
+
+
 	if (currentSlide === "page8"){
 		navWhite()
 	} else {navBlack()}
@@ -272,6 +289,9 @@ function doWork() {
 	})
 	}
 	lastSlide = fullpage_api.getActiveSection()['anchor'];
+	prevSlide = currentSlide;
+	prevSlide = prevSlide.replace('page','')
+	
 }
 
 doWork();
