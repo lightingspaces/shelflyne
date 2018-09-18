@@ -3,7 +3,7 @@ var myFullpage = new fullpage('#fullpage', {
 	licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 	menu: '#menu',
 	lockAnchors: false,
-	anchors:['home', 'cri', 'modular', 'installation', 'installation_video', 'seasonal_look', 'accessories', 'contact'],
+	anchors:['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
 	navigation: true,
 	navigationPosition: 'left',
 	navigationTooltips: [],
@@ -224,6 +224,7 @@ function doWork() {
 	repeater = setTimeout(doWork, 100);
 	// console.log(fullpage_api.getActiveSection()['anchor']);
 	currentSlide = fullpage_api.getActiveSection()['anchor'];
+	console.log(currentSlide)
 	var isOpen2 = document.querySelector('div#navbarSupportedContent22').classList.contains('show')
 	if (currentSlide !== lastSlide){
 		// 
