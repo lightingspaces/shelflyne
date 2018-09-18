@@ -27,10 +27,7 @@ html {
     html {
         font-size: 2.3rem !important;
       }
-      img.vimeoicon {
-        min-width: 150px !important;
-        min-height: 120px !important;
-    }
+
  }
 
 
@@ -1246,13 +1243,7 @@ p.omaimg {
     top: 10px;
 }
 
-img.vimeoicon {
-    width: 6%;
-    height: 6%;
-    min-width: 50px;
-    min-height: 40px;
-    
-}
+
 
 img#sendmail {
     width: 10%;
@@ -1384,10 +1375,25 @@ div#tinyobs2, div#tinyobs2_2 {
 
 }
 
+
+
+
+.vimeoanchor {
+    position: relative;
+    left: 6%;
+    top: 50px;
+    width: 70px;
+    height: 60px;
+    min-width: unset;
+    min-height: unset;
+    /* position: absolute; */
+}
+
+
 img.vimeoicon {
-    width: 6%;
-    height: 6%;
-    min-width: 75px;
-    min-height: 60px;
-    position: absolute;
+    width: 70px;
+    height: auto;
+    position: relative;
+    /* min-height: 60px; */
+    /* position: absolute; */
 }
