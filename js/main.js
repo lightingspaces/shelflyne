@@ -1,64 +1,49 @@
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
 
   // preload spinner
-
-  $(window).on('load', function(){
-    $("#preloader").delay(2000).fadeOut("slow");
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      document.getElementById('preloader').classList.add('fadeOut');
+      setTimeout(function() {
+        document.getElementById('preloader').style.display = 'none';
+      }, 600);
+    }, 2000);
   });
 
-  // parallax.js
-  // https://github.com/wagerfield/parallax
-
-  // JavaScript
-  
-  var parallaxScenes = [];
-  var sceneElements = [
-    document.getElementById('scene-01'),
-    document.getElementById('scene-02')
-    ]
-    for(i=0; i<sceneElements.length; i++){
-      parallaxScenes[i] = new Parallax(sceneElements[i], {
-        hoverOnly: true
+  // expand or shrink active section
+  var mainLinks = document.querySelectorAll('#main > a');
+  mainLinks.forEach(function(link) {
+    link.addEventListener('mouseover', function() {
+      link.classList.add('active');
+      mainLinks.forEach(function(otherLink) {
+        if (otherLink !== link) {
+          otherLink.classList.add('shrink');
+        }
       });
-  }
+    });
 
-  // classes for expanding sections
-
-  $('#main > a').hover(function(){
-    $(this).addClass('active');
-    $('#main > a:not(.active)').addClass('shrink');
-  }, function() {
-      $(this).removeClass('active');
-      $('#main > a').removeClass('shrink');
+    link.addEventListener('mouseout', function() {
+      link.classList.remove('active');
+      mainLinks.forEach(function(otherLink) {
+        otherLink.classList.remove('shrink');
+      });
+    });
   });
 
   // play video on hover
+  function addVideoHoverEvents(linkId, videoId) {
+    document.getElementById(linkId).addEventListener('mouseover', function() {
+      document.getElementById(videoId).play();
+    });
 
-  document.getElementById("link-01").addEventListener("mouseover", function() {
-    document.getElementById("video-01").play();
-  });
-  
-  document.getElementById("link-01").addEventListener("mouseleave", function() {
-    document.getElementById("video-01").pause();
-  });
+    document.getElementById(linkId).addEventListener('mouseleave', function() {
+      var video = document.getElementById(videoId);
+      video.pause();
+      video.currentTime = 0;
+    });
+  }
 
-  document.getElementById("link-02").addEventListener("mouseover", function() {
-    document.getElementById("video-02").play();
-  });
-  
-  document.getElementById("link-02").addEventListener("mouseleave", function() {
-    document.getElementById("video-02").pause();
-  });
+  addVideoHoverEvents('link-01', 'video-01');
+  addVideoHoverEvents('link-02', 'video-02');
 
 });
-
-
-(function($) {
-  "use strict"; // Start of use strict
-
-  $(window).on('load', function(){
-    $("#preloader").delay(2000).fadeOut("slow");
-  });
-
-
-})(jQuery); // End of use strict
